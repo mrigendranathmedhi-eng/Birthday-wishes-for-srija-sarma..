@@ -1,49 +1,254 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Srija ❤️</title>
+
+<title>Happy Birthday Srija Sarma ❤️</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #100b24, #351447, #70234d);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    padding: 22px;
+    background: rgba(0,0,0,0.25);
+    color: #ffc5df;
+    letter-spacing: 2px;
+}
+
+.hero {
+    padding: 55px 20px;
+}
+
+.tag {
+    color: #ffc1dc;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #ffcee4;
+    text-shadow: 0 0 20px #ff4b91;
+}
+
+.name {
+    font-size: 36px;
+    color: #ffd166;
+    margin: 15px 0;
+}
+
+.photo {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffb6d9;
+    margin: 25px;
+    box-shadow: 0 0 35px #ff4b91;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.05); }
+}
+
+.intro {
+    max-width: 550px;
+    margin: 20px auto;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #ffe8f2;
+}
+
+.cake {
+    font-size: 90px;
+    margin: 25px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-15px); }
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 35px;
+    margin: 25px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 0 25px #ff416c;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 40px pink;
+}
+
+.section {
+    padding: 45px 20px;
+    background: rgba(255,255,255,0.06);
+    margin: 25px 15px;
+    border-radius: 25px;
+}
+
+.section h2 {
+    color: #ffd166;
+    margin-bottom: 20px;
+}
+
+.section p {
+    line-height: 1.9;
+    color: #ffe8f2;
+    max-width: 550px;
+    margin: auto;
+}
+
+.floating {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: float 7s linear infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+footer {
+    padding: 25px;
+    color: #ffc5df;
+}
+
+@media(max-width:600px) {
+    h1 { font-size: 32px; }
+    .name { font-size: 28px; }
+    .photo { width: 175px; height: 175px; }
+}
+</style>
 </head>
 
 <body>
 
-<div class="hearts">❤️ 💖 ✨ 🎈 💕</div>
-
 <nav>
-<h2>🎂 Birthday Surprise</h2>
+    ✨ A SPECIAL BIRTHDAY SURPRISE ✨
 </nav>
 
 <section class="hero">
 
-<p class="small">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+    <p class="tag">TODAY IS YOUR SPECIAL DAY</p>
 
-<h1>Happy Birthday</h1>
+    <h1>Happy Birthday</h1>
 
-<h2 class="name">Srija Sarma ❤️</h2>
+    <h2 class="name">Srija Sarma ❤️</h2>
 
-<img src="friend.jpg" class="profile" alt="Srija">
+    <img src="friend.jpg" class="photo" alt="Srija Sarma">
 
-<p class="intro">
-Today is not just another day.
-Today is the day someone wonderful was born.
-You deserve all the happiness in this world!
-</p>
+    <p class="intro">
+        Some people make life more beautiful
+        just by being a part of it.
 
-<div class="cake">🎂</div>
+        Today is all about celebrating you!
+        May your life always be filled with
+        happiness, love and endless smiles. 💖
+    </p>
 
-<a href="wishes.html" class="btn">
-Open Your Surprise 🎁
-</a>
+    <div class="cake">🎂</div>
 
-<p class="bottom">Made with ❤️ for Srija Sarma</p>
+    <a href="wishes.html" class="btn">
+        🎁 Open Your Special Surprise
+    </a>
+
+</section>
+
+<section class="section">
+
+    <h2>🌸 A Little Birthday Reminder</h2>
+
+    <p>
+        You are special, you are amazing,
+        and you deserve every beautiful thing
+        life has to offer.
+
+        Never stop smiling and never stop dreaming.
+        Keep shining, Srija! ✨
+    </p>
+
+</section>
+
+<section class="section">
+
+    <h2>💗 Friendship & Memories</h2>
+
+    <p>
+        Beautiful friendships create beautiful memories.
+        Every laugh, every conversation and every moment
+        becomes a special part of life.
+
+        Here's to more wonderful memories ahead! 🫶
+    </p>
 
 </section>
 
 <footer>
-© 2026 Birthday Surprise | Made with Love ❤️
+    Made with ❤️ for Srija Sarma <br><br>
+    © 2026 Birthday Surprise
 </footer>
+
+<script>
+
+function createFloating() {
+
+    const symbols = ["❤️","💖","💕","✨","🎈","🌸"];
+
+    const item = document.createElement("div");
+
+    item.className = "floating";
+
+    item.innerHTML = symbols[
+        Math.floor(Math.random() * symbols.length)
+    ];
+
+    item.style.left = Math.random() * 100 + "vw";
+
+    item.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+    document.body.appendChild(item);
+
+    setTimeout(() => item.remove(), 9000);
+
+}
+
+setInterval(createFloating, 500);
+
+</script>
 
 </body>
 </html>
