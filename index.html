@@ -1,188 +1,49 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Happy Birthday Srija Sarma 🎂</title>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #141e30, #243b55);
-    color: white;
-    text-align: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-.container {
-    padding: 60px 20px;
-}
-
-h1 {
-    font-size: 35px;
-    color: #ffcc70;
-    margin-bottom: 20px;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 5px pink; }
-    to { text-shadow: 0 0 25px hotpink; }
-}
-
-.photo {
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #ffcc70;
-    margin: 25px 0;
-    box-shadow: 0 0 25px pink;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin: 15px auto;
-    max-width: 550px;
-}
-
-button {
-    background: linear-gradient(45deg, #ff416c, #ff4b2b);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 17px;
-    cursor: pointer;
-    margin-top: 25px;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
-
-#surprise {
-    display: none;
-    margin-top: 30px;
-    animation: fade 2s;
-}
-
-@keyframes fade {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.heart {
-    position: fixed;
-    bottom: -20px;
-    font-size: 25px;
-    animation: float 5s linear forwards;
-    pointer-events: none;
-}
-
-@keyframes float {
-    to {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-</style>
+<title>Happy Birthday Srija ❤️</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<div class="hearts">❤️ 💖 ✨ 🎈 💕</div>
 
-<h1>🎉 Happy Birthday! 🎂</h1>
+<nav>
+<h2>🎂 Birthday Surprise</h2>
+</nav>
 
-<h2>Dear Srija Sarma ❤️</h2>
+<section class="hero">
 
-<img src="friend.jpg" class="photo" alt="Srija Sarma">
+<p class="small">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
 
-<p>
-Today is your special day! 🥳
+<h1>Happy Birthday</h1>
 
-May your life always be filled with happiness,
-success, love and beautiful memories.
+<h2 class="name">Srija Sarma ❤️</h2>
 
-Keep smiling and stay blessed! ❤️
+<img src="friend.jpg" class="profile" alt="Srija">
+
+<p class="intro">
+Today is not just another day.
+Today is the day someone wonderful was born.
+You deserve all the happiness in this world!
 </p>
 
-<button onclick="showSurprise()">
-🎁 Open Your Surprise
-</button>
+<div class="cake">🎂</div>
 
-<div id="surprise">
+<a href="wishes.html" class="btn">
+Open Your Surprise 🎁
+</a>
 
-<h1>🎂 Happy Birthday Srija Sarma! ❤️</h1>
+<p class="bottom">Made with ❤️ for Srija Sarma</p>
 
-<p>
-You're not just a friend, you're a wonderful part
-of my life.
+</section>
 
-Thank you for all the laughter, memories
-and unforgettable moments.
-
-May all your dreams come true.
-May every day bring you new reasons to smile.
-
-Keep shining, keep smiling and stay happy forever!
-
-Once again, MANY MANY HAPPY RETURNS OF THE DAY,
-SRIJA SARMA! 🎉❤️
-</p>
-
-<h2>🎈 Enjoy Your Special Day! 🎈</h2>
-
-</div>
-
-</div>
-
-<script>
-
-function showSurprise() {
-
-    document.getElementById("surprise").style.display = "block";
-
-    createHearts();
-
-}
-
-function createHearts() {
-
-    for (let i = 0; i < 40; i++) {
-
-        let heart = document.createElement("div");
-
-        heart.className = "heart";
-
-        heart.innerHTML = ["❤️","🎈","💖","✨","🎉"][
-            Math.floor(Math.random() * 5)
-        ];
-
-        heart.style.left = Math.random() * 100 + "vw";
-
-        heart.style.animationDuration =
-            (3 + Math.random() * 4) + "s";
-
-        document.body.appendChild(heart);
-
-        setTimeout(() => heart.remove(), 7000);
-
-    }
-
-}
-
-</script>
+<footer>
+© 2026 Birthday Surprise | Made with Love ❤️
+</footer>
 
 </body>
 </html>
